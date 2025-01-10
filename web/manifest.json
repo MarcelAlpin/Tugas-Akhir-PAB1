@@ -1,6 +1,6 @@
 {
-    "name": "tugas_akhirpab1",
-    "short_name": "tugas_akhirpab1",
+    "name": "tugas",
+    "short_name": "tugas",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

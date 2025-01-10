@@ -33,5 +33,3 @@ class MainApp extends StatelessWidget {
         '/register': (context) => const RegisterScreen()
       },
     );
-  }
-}

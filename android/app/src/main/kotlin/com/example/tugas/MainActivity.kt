@@ -1,4 +1,4 @@
-package com.example.tugas_akhirpab1
+package com.example.tugas
 
 import io.flutter.embedding.android.FlutterActivity
 
