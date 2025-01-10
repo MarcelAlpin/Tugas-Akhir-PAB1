@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_akhirpab1/screens/login_screen.dart';
 import 'package:tugas_akhirpab1/screens/register_screen.dart';
+import 'package:tugas_akhirpab1/screens/home_screen.dart';
+import 'package:tugas_akhirpab1/screens/main_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
@@ -22,14 +24,16 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'kerajian app',
-      theme:ThemeData(
+      theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFFAC67A),
         primarySwatch: Colors.blue,
-        ),
-        home: isLoggedIn ? const HomeScreen() : const LoginScreen(),
-        routes: {
+      ),
+      home: isLoggedIn ? const MainScreen() : const LoginScreen(),
+      routes: {
         '/login': (context) => const LoginScreen(),
-        '/home': (context) => const HomeScreen(),
+        '/home': (context) => const MainScreen(),
         '/register': (context) => const RegisterScreen()
       },
     );
+  }
+}
