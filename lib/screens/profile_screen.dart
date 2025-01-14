@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_akhirpab1/screens/edit_profile_screen.dart';
 import 'package:tugas_akhirpab1/screens/home_screen.dart';
+import 'package:tugas_akhirpab1/data/home_data.dart';
+import 'package:tugas_akhirpab1/models/home.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    profile varprofile = profileList[0];
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
@@ -34,7 +37,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               SizedBox(height: 16),
               Text(
-                'User Pintar',
+                profileList[0].nama,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 22,
@@ -42,10 +45,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               SizedBox(height: 8),
               Text(
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                'Morbi vehicula auctor velit, nec semper eros tincidunt a. '
-                'Sed nec tincidunt nunc, sit amet dignissim odio. Phasellus '
-                'vulputate aliquam blandit.',
+                profileList[0].deskripsi,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 14, color: Colors.grey[600]),
               ),
@@ -69,7 +69,7 @@ class ProfileScreen extends StatelessWidget {
               GridView.builder(
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
-                itemCount: 6, // Jumlah data dummy
+                itemCount: profileList[0].gambar.length, // Jumlah data dummy
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   crossAxisSpacing: 8,
@@ -83,12 +83,9 @@ class ProfileScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
-                      child: Text(
-                        'Title',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        ),
+                      child: Image.network(
+                        profileList[0].gambar[index],
+                        fit: BoxFit.cover,
                       ),
                     ),
                   );

@@ -218,7 +218,9 @@ class _DetailScreenState extends State<DetailScreen> {
                       height: 200,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: widget.varkerajinan.gambar.length,
+                        itemCount: (widget.varkerajinan.gambar is List<String>)
+                            ? widget.varkerajinan.gambar.length
+                            : 0,
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(right: 8),

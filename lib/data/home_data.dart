@@ -181,3 +181,16 @@ var kerajinanList = [
     ],
   ),
 ];
+
+var profileList = [
+  profile(
+    nama: 'Rizky Fauzan',
+    deskripsi: 'Pemula yang ingin belajar kerajinan tangan',
+    gambar: [
+      'https://media-cdn.tripadvisor.com/media/photo-o/08/8d/bd/dc/photo1jpg.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-o/08/30/84/fe/detail.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-o/07/9c/66/49/parc-du-monastere.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-o/07/64/89/fe/candi-mendut-temple.jpg',
+    ],
+  ),
+];
