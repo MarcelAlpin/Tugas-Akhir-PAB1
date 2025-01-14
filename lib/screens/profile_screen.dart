@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_akhirpab1/screens/edit_profile_screen.dart';
 import 'package:tugas_akhirpab1/screens/home_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -10,13 +11,6 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.orange,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const HomeScreen()));
-          },
-        ),
         title: Text(
           'KREASIKREATIF',
           style: TextStyle(
@@ -58,7 +52,10 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () {
-                  // Aksi saat tombol "Edit Profile" ditekan
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const EditProfileScreen()));
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
