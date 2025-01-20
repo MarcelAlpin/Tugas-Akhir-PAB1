@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:tugas_akhirpab1/data/home_data.dart';
 import 'package:tugas_akhirpab1/models/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -213,36 +214,8 @@ class _DetailScreenState extends State<DetailScreen> {
                 ),
                 // ---------------- BAWAH ------------------
                 Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: SizedBox(
-                      height: 200,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: (widget.varkerajinan.gambar is List<String>)
-                            ? widget.varkerajinan.gambar.length
-                            : 0,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 8),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: CachedNetworkImage(
-                                imageUrl: widget.varkerajinan.gambar[index],
-                                placeholder: (context, url) => Transform.scale(
-                                  scale: 0.2,
-                                  child: const CircularProgressIndicator(),
-                                ),
-                                errorWidget: (context, url, error) =>
-                                    const Icon(Icons.error),
-                                width: 200,
-                                height: 200,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ))
+                  padding: const EdgeInsets.all(16),
+                )
               ],
             ),
           ),
