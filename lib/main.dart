@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_akhirpab1/screens/login_screen.dart';
 import 'package:tugas_akhirpab1/screens/register_screen.dart';
-import 'package:tugas_akhirpab1/screens/home_screen.dart';
 import 'package:tugas_akhirpab1/screens/main_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

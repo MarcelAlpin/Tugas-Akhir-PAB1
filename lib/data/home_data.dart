@@ -187,10 +187,7 @@ var profileList = [
     nama: 'Rizky Fauzan',
     deskripsi: 'Pemula yang ingin belajar kerajinan tangan',
     gambar: [
-      'https://media-cdn.tripadvisor.com/media/photo-o/08/8d/bd/dc/photo1jpg.jpg',
-      'https://media-cdn.tripadvisor.com/media/photo-o/08/30/84/fe/detail.jpg',
-      'https://media-cdn.tripadvisor.com/media/photo-o/07/9c/66/49/parc-du-monastere.jpg',
-      'https://media-cdn.tripadvisor.com/media/photo-o/07/64/89/fe/candi-mendut-temple.jpg',
+      'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liputan6.com%2Fhot%2Fread%2F5227736%2Fcara-membuat-kerajinan-dari-barang-bekas-yang-mudah-jadi-proyek-do-it-yourself&psig=AOvVaw1kbiFGt6VidDvFdsV-y8F4&ust=1736957837431000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjm86jO9YoDFQAAAAAdAAAAABAI'
     ],
   ),
 ];
