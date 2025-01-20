@@ -80,7 +80,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 onPressed: () {
                   Navigator.pop(context); // Kembali ke LoginScreen
                 },
-                child: const Text('belum memiliki? Login'),
+                child: const Text('sudah memiliki akun? Login'),
               ),
             ),
           ],
